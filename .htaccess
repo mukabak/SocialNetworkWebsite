@@ -1,0 +1,7 @@
+RewriteBase /
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)$ profile.php?u=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ profile.php?u=$1
+RewriteRule ^albums/([a-zA-Z0-9_-]+)$ view_albums.php?u=$1
+RewriteRule ^albums/view_photo/([a-zA-Z0-9_-]+)$ view_photo.php?uid=$1
+RewriteRule ^edit_albums/([a-zA-Z0-9_-]+)$ edit_albums.php?uid=$1
